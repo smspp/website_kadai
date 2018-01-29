@@ -1,0 +1,481 @@
+/*全体
+-----------------*/
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*clearfix
+-----------------*/
+.clearfix:after {
+  content: ".";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+/*
+-----------------*/
+
+#wrapper{
+	width: 1366px;
+}
+
+p{
+	font-family: serif;
+}
+
+header{
+	width: 960px;
+	margin: 0 auto;
+}
+
+.head1{
+	display: flex;
+	justify-content: space-between;
+}
+
+.logo{
+	font-size: 10px;
+}
+
+.imglogo{
+	width: 195px;
+}
+
+.logo-tonari{
+	font-size: 20px;
+	padding-top: 15px;
+}
+
+.yoyakua{
+	width: 82px;
+	height: 20px;
+	background-color: brown;
+	margin-left: 60px;
+}
+
+.yoyaku{
+	font-size: 13px;
+	color: white;
+	width: 82px;
+	height: 20px;
+	padding-left: 15px;
+}
+
+.head-ul{
+	display: flex;
+	justify-content: space-around;
+	font-size: 15px;
+	background-color: teal;
+}
+
+.head2{
+	width: 100%;
+}
+
+.fixed{
+	position: fixed;
+	width: 100%;
+	top: 0;
+	right: 0;
+}
+
+.head-li{
+  padding-left: 22px;
+  padding-right: 22px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.head-li a{
+	color: white;
+}
+
+.head-li:hover{
+	background-color: #04B486;
+}
+
+.img1{
+	background-image: url(../img/mainvisual/main_01.png);
+	background-size: cover;
+	width: 100%;
+	height: 700px;
+}
+
+.main1{
+	width: 960px;
+	margin: 0 auto;
+	font-size:15px;
+}
+
+.title{
+	text-align: center;
+	background-color: teal;
+	color: white;
+	font-size: 13px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+.ulform{
+	display: flex;
+	justify-content: space-around;
+	background-color: burlywood;
+	font-size: 13px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.number{
+	width: 35px;
+}
+
+.main2{
+	width: 100%;
+	height: 420px;
+	background-image: url(../img/top/intro_bg.png);
+	margin-bottom:10px;
+}
+
+.main-nakami {
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    padding-top: 101px;
+}
+
+.main2-sc1 {
+    font-size: 39px;
+    font-family: "sans-serif";
+    padding-bottom: 64px;
+}
+
+.main2-sc2 {
+    font-size: 15px;
+    text-align: left;
+    width: 700px;
+    margin-left: 193px;
+}
+
+.main3{
+	width: 100%;
+	height: 420px;
+	background-image: url(../img/top/bar_sec_bg.png);
+	background-size:cover ;
+	background-repeat: no-repeat;
+	margin-bottom: 10px;
+}
+
+.main-button{
+	padding-top: 55px;
+}
+
+.button-nakami{
+	border: 1px solid white;
+	width: 300px;
+	height: 30px;
+	margin: 0 auto;
+	background-color: black;
+	color: white;
+	padding-top: 5px;
+	font-size: 13px;
+	transition: 0.5s;
+}
+
+.button-nakami:hover{
+	background-color: #424242;
+	color:#f2f2f2;
+}
+
+
+.main4{
+	width: 100%;
+	height: 420px;
+	background-image: url(../img/top/facility_sec_bg.png);
+	background-size: cover;
+	margin-bottom: 10px;
+}
+
+.plan{
+	width: 100%;
+	height: 365px;
+	background-image: url(../img/top/plan_sec_bg.png);
+	background-size: cover;
+}
+
+.plan-nakami{
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.planp{
+	font-size: 24px;
+  padding-top: 15px;
+}
+
+.ul-plan{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 20px;
+}
+
+.li-plan{
+	font-size: 19px;
+	width: 300px;
+	height: 234px;
+	background-color: white;
+}
+
+.plan-img{
+	width: 100%;
+	height: 186px;
+}
+
+.oshirase{
+	width: 100%;
+	height: 305px;
+	background-image: url(../img/top/news_bg.png);
+	background-size: cover;
+}
+
+.oshirase-nakami{
+	width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 50px;
+}
+
+.ul-oshirase{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-left: 25px;
+	padding-top: 15px;
+}
+
+.li-oshirase{
+	font-size: 13px;
+	margin-right: 30px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.oship{
+	width: 100%;
+	font-size: 13px;
+	background-color: teal;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	color: white;
+}
+
+.oship1{
+	font-size: 13px;
+	padding-top: 40px;
+}
+
+.oship2{
+	font-size: 13px;
+	text-align: right;
+	margin-top: 20px;
+}
+
+.link{
+	width: 100%;
+	height: 731px;
+	background-image: url(../img/top/plan_sec_bg.png);
+	background-size: cover;
+}
+
+.link-nakami{
+	width: 960px;
+	margin:0 auto;
+	text-align: center;
+}
+
+.link-yt{
+	padding-top: 50px;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.linkul{
+	display:flex;
+	justify-content: space-around;
+	padding-top: 50px;
+}
+
+.linka{
+	color: white;
+}
+
+.linka:hover{
+	color: white;
+	font-weight: bold;
+}
+
+
+.linkli1{
+	width: 200px;
+	height: 200px;
+	background-image: url(../img/footer/f_banner_link_01.png);
+	font-size: 13px;
+	color: white;
+	padding-top: 90px;
+	background-size: cover;
+}
+
+.linkli2{
+	width: 200px;
+	height: 200px;
+	background-image: url(../img/footer/f_banner_link_02.png);
+	font-size: 13px;
+	color: white;
+	padding-top: 90px;
+	background-size: cover;
+}
+
+.linkli3{
+	width: 200px;
+	height: 200px;
+	background-image: url(../img/footer/f_banner_link_03.png);
+	font-size: 13px;
+	color: white;
+	padding-top: 90px;
+	background-size: cover;
+}
+
+.linkli4{
+	width: 200px;
+	height: 200px;
+	background-image: url(../img/footer/f_banner_link_04.png);
+	font-size: 13px;
+	padding-top: 90px;
+	background-size: cover;
+}
+
+
+.linkli1:hover{
+	width: 180px;
+	height: 180px;
+	background-image: url(../img/footer/f_banner_link_01.png);
+	font-size: 17px;
+	margin-top: 10px;
+	padding-top: 80px;
+
+}
+
+.linkli2:hover{
+	width: 180px;
+	height: 180px;
+	background-image: url(../img/footer/f_banner_link_02.png);
+	font-size: 17px;
+	margin-top: 10px;
+	padding-top: 80px;
+}
+
+.linkli3:hover{
+	width: 180px;
+	height: 180px;
+	background-image: url(../img/footer/f_banner_link_03.png);
+	font-size: 17px;
+	margin-top: 10px;
+	padding-top: 80px;
+}
+
+.linkli4:hover{
+	width: 180px;
+	height: 180px;
+	background-image: url(../img/footer/f_banner_link_04.png);
+	font-size: 17px;
+	margin-top: 10px;
+	padding-top: 80px;
+}
+
+.snsul{
+	display: flex;
+	justify-content: center;
+	padding-top: 35px;
+	padding-bottom: 40px;
+}
+
+.snsli-f{
+	width: 70px;
+	height: 70px;
+	margin-right: 15px;
+	margin-left: 15px;
+	padding-top: 5px;
+	transition: 0.5s;
+}
+
+.snsli-f:hover{
+	width: 80px;
+	height: 80px;
+	border: 1px solid black;
+}
+
+.snsli-i{
+	width: 70px;
+	height: 70px;
+	margin-right: 15px;
+	margin-left: 15px;
+	padding-top: 5px;
+	transition: 0.5s;
+}
+
+.snsli-i:hover{
+	width: 80px;
+	height: 80px;
+	border: 1px solid black;
+}
+
+.snsli-t{
+	width: 80px;
+	height: 80px;
+	margin-right: 15px;
+	margin-left: 15px;
+	transition: 0.5s;
+}
+
+.snsli-t:hover{
+	width: 80px;
+	border: 1px solid black;
+}
+
+footer{
+	width: 100%;
+	height: 108px;
+	background-color: gray;
+}
+
+.foot{
+	width: 960px;
+	display: flex;
+	margin: 0 auto;
+	justify-content: space-around;
+	padding-top: 24px;
+}
+
+.logofoot{
+	width: 175px;
+	margin-right: 80px;
+}
+
+.logo-tonari2{
+	font-size: 14px;
+	color: white;
+	text-align: center;
+	margin-right: 75px;
+	margin-top: 3px;
+}
